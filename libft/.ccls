@@ -1,0 +1,4 @@
+clang
+-Wall -Wextra -Werror
+-std=c99
+-I.

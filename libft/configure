@@ -1,0 +1,26 @@
+#!/bin/bash
+
+TEMPLATE="$(cat Makefile.template)"
+OUTFILE=Makefile
+
+IFS=$'\n'
+SRC=($(find ./src -name '*.c'))
+
+echo -n '' > $OUTFILE
+I=0
+for i in "${SRC[@]}"
+do
+  if [[ $I == 0 ]]
+  then
+    echo -e "SRC\t\t:=\t$i\\" >> $OUTFILE
+  elif [[ $I == $(( ${#SRC[@]} - 1 )) ]]
+  then
+    echo -e "\t\t\t$i" >> $OUTFILE
+  else
+    echo -e "\t\t\t$i\\" >> $OUTFILE
+  fi
+  ((++I))
+done
+
+cat Makefile.template >> $OUTFILE
+make
