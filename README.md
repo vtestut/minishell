@@ -17,6 +17,7 @@ The `minishell` project is an introduction to operating systems and process mana
 
 - **Redirection and Pipes:**
   - Support input/output redirection and pipes.
+  - Support heredoc
 
 - **Environment Variables:**
   - Manage and modify environment variables.
