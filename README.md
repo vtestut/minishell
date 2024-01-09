@@ -3,7 +3,7 @@
 Welcome to my `minishell` project !  
 
 This is a major project in the Ecole 42 commom core, and it's a tough one !  
-It challenges students to create a not so simple Unix shell.  
+It challenges students to create a (not so) simple Unix shell.  
 
 Read the [subject](https://github.com/VirgileT/minishell-42/blob/main/SUBJECT_minishell.pdf).
 
